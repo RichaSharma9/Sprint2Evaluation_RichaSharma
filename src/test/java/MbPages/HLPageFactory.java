@@ -19,7 +19,7 @@ public class HLPageFactory {
 
 //<-------------------------------SCENARIO 1 WEBELEMENTS----------------------------------->//		
 	
-	@FindBy(xpath="//div[@id=\"homeloanDrop\"]/preceding-sibling::a") 
+	@FindBy(xpath="//li[@class=\"js-menu-container\"][4]/child::a") 
 	WebElement HomeLoansHeading;
 	
 	@FindBy(xpath="//a[@href=\"https://www.magicbricks.com/homeloan/home?inc=desktop_homeloan_menu_linkage\"]")
@@ -147,7 +147,7 @@ public class HLPageFactory {
 //<--------THIS SCENARIO IS USED TO VALIDATE THE HOMELOAN CHECK ELIGIBILITY FUNCTIONALITY--------->//
 	
 	public void clickHomeLoans() throws InterruptedException
-	 {
+	 {   
 		 loanSection.click();		 
 	 }
 	

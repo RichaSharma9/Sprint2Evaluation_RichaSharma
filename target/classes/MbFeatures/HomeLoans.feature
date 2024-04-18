@@ -7,7 +7,7 @@ Background:
     Given User is on the homepage of MagicBricks
 
 #THIS METHOD IS USED TO VALIDATE THE HOMELOAN FUNCTIONALITY WITH VALID DETAILS
-  @Homeloan
+  @Homeloan_calculator
   Scenario Outline: To Check the homeloan calculator functionality with valid details
     When User is on the homeloans page
     When User enter the <Loan_Amount>, <Mobile>, <City>

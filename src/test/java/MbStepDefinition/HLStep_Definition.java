@@ -28,10 +28,16 @@ public class HLStep_Definition {
 	
 //<--------------------------------SCENARIO 1-------------------------------->//
 	
+	/*
+	 * Created By  : Richa Sharma
+	 * Reviewed By : 
+	 * Motive : In this scenario we are testing for home loan calculator functionality  
+	 */	
+	
 	@Given("User is on the homepage of MagicBricks")
 	public void user_is_on_the_homepage_of_magic_bricks() throws InterruptedException {
-		//driver=HLSetupDriver.edgedriver();
-		driver=HLSetupDriver.chromedriver();
+		driver=HLSetupDriver.edgedriver();
+		//driver=HLSetupDriver.chromedriver();
 		hl= new HLPageFactory(driver);
 		hl.HoverOnHomeLoanOption();		
 	}
@@ -64,6 +70,13 @@ public class HLStep_Definition {
 	}
 
 //<--------------------------------SCENARIO 2-------------------------------->//
+	
+	/*
+	 * Created By : Richa Sharma
+	 * Reviewed By :
+	 * Motive : In this scenario we are testing for monthly EMI calculator functionality
+	 *          for the given loan amount
+	 */	
 
     @When("User is on the EMI calculator page")
     public void user_is_on_the_emi_calculator_page() throws InterruptedException {
@@ -92,6 +105,13 @@ public class HLStep_Definition {
    }
 
  //<--------------------------------SCENARIO 3-------------------------------->//
+  
+    /*
+	 * Created By : Richa Sharma
+	 * Reviewed By :
+	 * Motive : In this scenario we are testing for monthly EMI calculator functionality
+	 *          with empty loan amount field 
+	 */	
 
    @When("The user is on the EMI calculator page to estimate the monthly EMI")
    public void the_user_is_on_the_emi_calculator_page_to_estimate_the_monthly_emi() throws InterruptedException {
@@ -122,6 +142,12 @@ public class HLStep_Definition {
   }
 
  //<--------------------------------SCENARIO 4-------------------------------->//
+   
+    /*
+  	 * Created By : Richa Sharma
+  	 * Reviewed By :
+  	 * Motive : In this scenario we are testing for prepayment amount calculator functionality 
+  	 */	
    
    @When("User is on the Homeloans calculation page")
    public void user_is_on_the_homeloans_calculation_page() throws InterruptedException {
@@ -157,7 +183,7 @@ public class HLStep_Definition {
 	    String expectedurl="https://www.magicbricks.com/homeloan/home?inc=desktop_homeloan_menu_linkage";
 	    String actualurl=driver.getCurrentUrl();
 	    Assert.assertEquals(actualurl, expectedurl);
-        System.out.println("Scenario 3 successfully implemented");
+        System.out.println("Scenario 4 successfully implemented");
   }
 
 //<---THIS METHOD USED TO TAKE SCREENSHOT AFTER EVERY STEP--->//

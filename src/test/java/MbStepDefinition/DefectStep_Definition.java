@@ -20,6 +20,14 @@ HLPageFactory hlp;
 
 //<THIS SCENARIO CONTAINS DEFECT AS WHEN WE CLICK ON THE SAMPLE REPORT OPTION OF VASTU CONSULTANT PAGE>//
 //<SAMPLE REPORT DOES NOT GENERATE>//
+
+/*
+ * Created By : Richa Sharma
+ * Reviewed By :
+ * Motive : In this scenario we are testing for sample report functionality given in 
+ * vastu consultant page
+ */	
+
 	@Given("User is on website homepage")
 	public void user_is_on_website_homepage() throws InterruptedException {
 	   driver=HLSetupDriver.chromedriver();

@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Apr 17 15:04:27 IST 2024</td>
+<td>Started on:</td><td>Thu Apr 18 15:29:31 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>12 seconds (12726 ms)</td>
+<tr><td>Total time:</td><td>18 seconds (18678 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -77,23 +77,29 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='MbTestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: MbTestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Vastu Consultant Report Functionality", "Vastu Functionality Validation"</td>
-<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+<td><div><pre>java.lang.AssertionError: expected [https://magicbricks.com/vastu-consultant/sample-report] but found [https://www.magicbricks.com/propertyservices/vastu-services]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertTrue(Assert.java:57)
-	at org.testng.Assert.assertTrue(Assert.java:67)
-	at MbStepDefinition.DefectStep_Definition.report_will_be_open_on_another_page(DefectStep_Definition.java:44)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at MbPages.HLPageFactory.defectMsgAssertion(HLPageFactory.java:317)
+	at MbStepDefinition.DefectStep_Definition.report_will_be_open_on_another_page(DefectStep_Definition.java:52)
 	at ✽.Report will be open on another page(file:///C:/Users/RSHARM31/.eclipse/Homeloans/src/test/resource/MbFeatures/Defect.feature:8)
-</pre></div><a href='#' onClick='toggleBox("stack-trace713765818", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace713765818'><pre>java.lang.AssertionError: expected [true] but found [false]
+</pre></div><a href='#' onClick='toggleBox("stack-trace928508130", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace928508130'><pre>java.lang.AssertionError: expected [https://magicbricks.com/vastu-consultant/sample-report] but found [https://www.magicbricks.com/propertyservices/vastu-services]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertTrue(Assert.java:57)
-	at org.testng.Assert.assertTrue(Assert.java:67)
-	at MbStepDefinition.DefectStep_Definition.report_will_be_open_on_another_page(DefectStep_Definition.java:44)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at MbPages.HLPageFactory.defectMsgAssertion(HLPageFactory.java:317)
+	at MbStepDefinition.DefectStep_Definition.report_will_be_open_on_another_page(DefectStep_Definition.java:52)
 	at ✽.Report will be open on another page(file:///C:/Users/RSHARM31/.eclipse/Homeloans/src/test/resource/MbFeatures/Defect.feature:8)
 </pre></div></td>
-<td>11</td>
+<td>16</td>
 <td>MbTestRunner.TestRunner@6cb107fd</td></tr>
 </table><p>
 </body>
